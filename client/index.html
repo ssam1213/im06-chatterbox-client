@@ -9,6 +9,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script>
       // YOU DO NOT NEED TO EDIT THIS CODE
+      
       if (!/(&|\?)username=/.test(window.location.search)) {
         var newSearch = window.location.search;
         if (newSearch !== '' & newSearch !== '?') {
@@ -23,9 +24,23 @@
   </head>
   <body>
     <div id="main">
-      <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
+      <h1><a class="chatterBox" href=#>chatterbox</a></h1>
+      <!-- Your HTML goes here! -->      
+
+      <select id="roomSelect">
+        <option value="">select room</option>   
+      </select>
+      
+      <input id="text" placeholder="text" />
+      <button id="send" class="submit">submit</button>
+      <p id="roomBtn">
+        <button id="createRoom">create room</button>
+      </p>
+      
     </div>
-    <div id="chats"></div>
+    <div class="test">
+      <div id="frList"></div>
+      <div id="chats"></div>
+    </div>
   </body>
 </html>

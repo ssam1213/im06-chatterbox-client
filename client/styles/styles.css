@@ -5,8 +5,19 @@ body {
     font-family: arial, sans-serif;
 }
 
-#main, #chats {
-    width: 500px;
+#main {
+    width: 650px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 50px 60px;
+    border: solid #ddd;
+    border-width: 0 1px 1px 1px;
+}
+
+#chats {
+    width: 380px;
+    grid-column: 4;
     margin: auto;
     text-align: left;
     background: white;
@@ -87,4 +98,18 @@ form input[type=text] {
     color: #fff;
     background-color: #0090da;
 }
+
+.test {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr)
+}
+
+#frList {
+    grid-column: 3;
+    background: white;
+}
+
+
+
+
 
